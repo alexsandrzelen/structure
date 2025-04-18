@@ -16,11 +16,6 @@ struct {
     unsigned int division : 2;
 }remainder;
 
-
-int remainder_by_4(int n) {
-    return n & 3; // ïîáèòîâîå È ñ 3 (0b11) äà¸ò îñòàòîê îò äåëåíèÿ íà 4
-}
-
 void findRemainderBy4(int num) {
     printf("Введите число: ");
     while (scanf_s("%d", &num) != 1 && getchar() != '\n') {
